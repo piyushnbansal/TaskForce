@@ -1,0 +1,19 @@
+.head{
+    background-image: url("images/nitk1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:100%;
+    padding: 20% 0%;
+    color:white;
+}
+nav{
+    background-color: #00b3b3;
+}
+#aboutus{
+    background-color: #00b3b3;
+    color:white;
+}
+.icon li{
+    display: inline-block;
+}
