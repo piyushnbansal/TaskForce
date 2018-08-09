@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+footer {
+    padding-bottom: 40px;
+}
+
+.tskf-header-font {
+    font-family: 'Roboto Slab', serif;
+}
+
+.tskf-header-size {
+    font-size: 4rem;
+}
+
+.tskf-team-img {
+    width: 250px;
+    height: 250px;
+}
+
+.tskf-team-row {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.tskf-team-card {
+    display: inline-block;
+    padding: 30px;
+}
+
+.tskf-thicken {
+    font-weight: 600;
+}
+
+.tskf-icons-holder {
+    position: relative;
+    height: 190px;
+}
+
+.tskf-icons-holder > div {
+    position: absolute;
+    bottom: 0;
+}
+
+.tskf-icons-holder > div > a > img {
+    padding: 5px;
+    height: 40px;
+}
+
+@media only screen and (max-width: 992px) {
+    .tskf-icons-holder {
+        height: 80px;
+    }
+}
