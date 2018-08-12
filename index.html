@@ -25,7 +25,53 @@
 
 </head>
 <body>
-    <div class="row container">
+    <div class="navbar-fixed">
+        <nav class="white">
+            <div class="nav-wrapper container">
+                <a href="#!" class="brand-logo black-text">TaskForce</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#about-us-section">ABOUT US</a></li>
+                    <li><a href="#modules-section">MODULES</a></li>
+                    <li><a href="#team-section">TEAM</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="#about-us-section">ABOUT US</a></li>
+            <li><a href="#modules-section">MODULES</a></li>
+            <li><a href="#team-section">TEAM</a></li>
+        </ul>
+    </div>
+
+    <div class="container landing-window">
+        <div class="row">
+            <div class="col l9 push-l3 m12 center-align"><img class="landing-image responsive-img" src="images/nitk-1.jpg" /></div>
+            <div class="col l3 pull-l8 m12 landing-text-col">
+                <div class="row">
+                    <span class="col s12">
+                        <span class="landing-header-main white">TaskForce</span><br />
+                        <span class="landing-header-sub white">Redefining&nbsp;NITK</span>
+                    </span>
+                </div>
+                <div class="row">
+                    <div class="col m12">
+                        <p class="landing-descp">
+                            <span class="white">
+                                The main objective of TaskForce NITK is to make the life of students at NITK easier and provide special opportunities for the students to take part in administrative activities.
+                            </span>
+                        </p>
+                    </div>
+                    <div class="col l12 m6 offset-m2">
+                        <a class="waves-effect waves-light btn-large landing-know-more-btn grey lighten-4" href="#">I want to know more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row container" id="about-us-section">
         <div class="col s3 container right-align">
             <h1>About Us</h1>
         </div>
@@ -48,7 +94,7 @@
     <div class="container col s12">
         <img src="images/temp.jpg" class="image">
     </div>
-    <div class="container">
+    <div class="container" id="modules-section">
         <h1>Modules</h1>
         <div class="icon">
           <ul>
@@ -63,7 +109,7 @@
           </ul>
          </div>
     </div>
-    <div class="container">
+    <div class="container" id="team-section">
         <div class="row">
             <div class="col s12 tskf-header-font tskf-header-size">Team</div>
         </div>

@@ -63,8 +63,84 @@ footer {
     padding:2%;
 }
 
+.nav-wrapper > ul > li > a {
+    color: black !important;
+    font-weight: lighter;
+}
+
+.brand-logo {
+    font-weight: 600;
+    font-family: 'Roboto Slab', serif;
+}
+
+.landing-image {
+    max-height: 60vh;
+    padding: 10px;
+    border: 4px solid #fbc02d;
+}
+
+.landing-window {
+    margin-top: 5vh;
+}
+
+.landing-header-main, .landing-header-sub {
+    font-family: 'Roboto Slab', serif;
+    font-size: 7em;
+    overflow: visible;
+    font-weight: 800;
+    color: black;
+    padding-right: 1vw;
+}
+
+.landing-header-sub {
+    font-size: 3.5em;
+    font-weight: 300;
+}
+
+.landing-text-col {
+    margin-top: 3vh;
+}
+
+.landing-text-col > .row {
+    margin-bottom: 0px;
+}
+
+.landing-descp {
+    font-weight: 300;
+    font-size: 1.4em;
+    color: black;
+    line-height: 1.4;
+    padding-left: 5px;
+}
+
+.landing-know-more-btn {
+    border-radius: 20px;
+    color: #f57f17;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sidenav-overlay {
+    z-index: 99;
+}
+
+.sidenav {
+    width: 50vw;
+}
+
 @media only screen and (max-width: 992px) {
     .tskf-icons-holder {
         height: 80px;
+    }
+
+    .landing-know-more-btn, .landing-header-sub, .landing-header-main {
+        align-self: center;
+    }
+
+    .landing-header-main {
+        font-size: 4em;
+    }
+
+    .landing-header-sub {
+        font-size: 2em;
     }
 }

@@ -24,4 +24,7 @@ $(document).ready(function() {
         `;
     }
     $('.tskf-team-row').html(team_html);
+
+    // materialize
+    $('.sidenav').sidenav();
 });
