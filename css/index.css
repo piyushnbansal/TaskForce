@@ -4,8 +4,9 @@ footer {
     padding-bottom: 40px;
 }
 
-.tskf-header-font,h1 {
+.tskf-header-font,h1, .icon-card-content {
     font-family: 'Roboto Slab', serif;
+    font-weight:700;
 }
 
 .tskf-header-size {
@@ -49,9 +50,12 @@ footer {
 .data{
     padding : 2%;
 }
-.image{
+.image, .icon-card-image{
     width:100%;
 }
+/*.icon-card-image{
+    height:50%;
+}*/
 .icon li{
     display: inline-block;
     margin : 4%;
@@ -61,6 +65,7 @@ footer {
     width:300px;
     height:300px;
     padding:2%;
+    box-sizing: border-box;
 }
 
 .nav-wrapper > ul > li > a {
@@ -82,6 +87,7 @@ footer {
 .landing-window {
     margin-top: 5vh;
 }
+
 
 .landing-header-main, .landing-header-sub {
     font-family: 'Roboto Slab', serif;
@@ -132,24 +138,26 @@ footer {
     margin-top: 5px;
 }
 
+.content{
+    font-size: 1.8em;
+     width:100%;
+        padding: 20px;
+    max-width:32em;
+    
+}
+.icon-card-content{
+    font-size: 1.8em;
+}
+
 @media only screen and (max-width: 992px) {
     .tskf-icons-holder {
         height: 80px;
     }
-
-    .landing-know-more-btn, .landing-header-sub, .landing-header-main {
-        align-self: center;
-    }
-
-    .landing-header-main {
-        font-size: 4em;
-    }
-
-    .landing-header-sub {
-        font-size: 2em;
-    }
-
-    .logo-tskf {
-        max-height: 45px;
-    }
 }
+/*@media only screen and (max-width: 35em){
+    .content
+    {
+        width:100%;
+        padding: 20px;
+    }
+}*/
