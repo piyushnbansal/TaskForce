@@ -65,9 +65,7 @@ footer {
 .image, .icon-card-image{
     width:100%;
 }
-/*.icon-card-image{
-    height:50%;
-}*/
+
 .icon li{
     display: inline-block;
     margin : 4%;
@@ -80,11 +78,16 @@ footer {
     box-sizing: border-box;
 }
 
+
 .icon-image{
     box-sizing: border-box;
     height: 160px;
     width: 160px;
     /*padding: 10%;*/
+}
+
+#modules-section .icon-card:hover{
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
 }
 
 .nav-wrapper > ul > li > a {
