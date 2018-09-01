@@ -74,6 +74,7 @@ footer {
 }
 
 .brand-logo {
+    margin-left: 50px;
     font-weight: 600;
     font-family: 'Roboto Slab', serif;
 }
@@ -180,15 +181,21 @@ footer {
     width: 50vw;
 }
 
+.nav-wrapper {
+    position: relative;
+}
+
 .logo-tskf {
-    max-height: 55px;
-    margin-top: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    max-height: 70%;
 }
 
 .content{
     font-size: 1.8em;
-     width:100%;
-        padding: 20px;
+    width:100%;
+    padding: 20px;
     max-width:32em;
     
 }
@@ -199,6 +206,10 @@ footer {
 @media only screen and (max-width: 992px) {
     .tskf-icons-holder {
         height: 80px;
+    }
+
+    .brand-logo {
+        margin-left: 0px;
     }
 
     .landing-descp {
