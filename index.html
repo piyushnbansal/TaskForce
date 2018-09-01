@@ -26,26 +26,7 @@
 </head>
 <body>
 	
-    <div class="navbar-fixed">
-        <nav class="white">
-            <div class="nav-wrapper container">
-                <img src="images/taskforce_logo.png" class="logo-tskf" />
-                <a href="#!" class="brand-logo black-text">&nbsp;&nbsp;&nbsp;TaskForce</a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="#about-us-section">ABOUT US</a></li>
-                    <li><a href="#modules-section">MODULES</a></li>
-                    <li><a href="#team-section">TEAM</a></li>
-                </ul>
-            </div>
-        </nav>
-
-        <ul class="sidenav" id="mobile-demo">
-            <li><a href="#about-us-section">ABOUT US</a></li>
-            <li><a href="#modules-section">MODULES</a></li>
-            <li><a href="#team-section">TEAM</a></li>
-        </ul>
-    </div>
+    <div id="header" class="navbar-fixed"></div>
 
     <div class="container landing-container landing-window">
         <div class="row">
@@ -66,13 +47,13 @@
                         </p>
                     </div>
                     <div class="col l12 m6 offset-m2">
-                        <a class="waves-effect waves-light btn-large landing-know-more-btn white" href="#">I want to know more</a>
+                        <a class="waves-effect btn-large landing-know-more-btn white" href="#">I want to know more</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row container">
+    <div class="row container" id="about-us-section">
         <div class="col s12 m4 l4 left-align">
             <h1><span class="myellow">About Us</span></h1>
         </div>
@@ -95,7 +76,7 @@
     <div class="col s12">
         <img src="images/temp.jpg" class="image">
     </div>
-    <div class="container">
+    <div class="container" id="modules-section">
         <h1><span class="myellow">Modules</span></h1>
         <div class="icon">
           <ul>
@@ -167,7 +148,7 @@
           </ul>
          </div>
     </div>
-    <div class="container">
+    <div class="container" id="team-section">
         <div class="row">
             <div class="col s12 tskf-header-font tskf-header-size">
                 <span class="myellow">Team</span>
@@ -208,24 +189,16 @@
         <div class="row tskf-team-row"></div>
     </div>
     <footer class="page-footer grey lighten-2 black-text">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h1 class="tskf-header-font tskf-thicken">TaskForce NITK</h1>
-                    <h5>NH 66, Srinivas Nagar, Surathkal, Mangaluru, Karnataka 575025</h5>
-                </div>
-                <div class="tskf-icons-holder col l2 offset-l4 s12">
-                    <div>
-                        <a href="https://www.instagram.com/taskforcenitk/"><img src="images/instagram.png" /></a>
-                        <a href="https://www.facebook.com/TaskForceNITK/"><img src="images/fb.png" /></a>
-                        <a href="https://www.youtube.com/channel/UCKqMaqrtD1o_1i_bRyBYUUQ"><img src="images/youtube.png" /></a>
-                    </div>
-                </div>
-            </div>
-        </div>
     </footer>
     <!-- JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <!-- <script src="js/index.js" type="text/javascript"></script> -->
+
+    <script src="js/index.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $('#header').load('header.html');
+        $('footer').load('footer.html');
+    </script>
+
 </body>
 </html>

@@ -24,8 +24,9 @@
 
 </head>
 <body>
+    <div id="header" class="navbar-fixed"></div>
     <div class="center-align">
-        <h1>Title</h1>
+        <h1><span class="myellow">Title</span></h1>
     </div>
     <div class="container col s12">
         <img src="images/temp1.jpeg" class="image"><br>
@@ -43,4 +44,12 @@
         various issues faced by students at college and also help them stay well-
         informed regarding the happenings on campus.<br>
     </div>
+    <footer class="page-footer grey lighten-2 black-text">
+    </footer>
+    <script type="text/javascript">
+        $('#header').load('header.html', function() {
+            $('.header-list').prepend('<li><a href="/">HOME</a></li>');
+        });
+        $('footer').load('footer.html');
+    </script>
 </body>
