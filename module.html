@@ -47,7 +47,9 @@
     <footer class="page-footer grey lighten-2 black-text">
     </footer>
     <script type="text/javascript">
-        $('#header').load('header.html');
+        $('#header').load('header.html', function() {
+            $('.header-list').prepend('<li><a href="/">HOME</a></li>');
+        });
         $('footer').load('footer.html');
     </script>
 </body>
